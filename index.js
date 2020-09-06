@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 'use strict';
-const Input= require('./lib/input.js');
+
+//Requires the library files you will be writing (input, notes)
+const Input= require('./lib/input.js'); 
 const Note= require('./lib/notes.js')
 
+//Instantiates an instance of an “Input” parser module
 const obj= new Input();
 
+//Passes the command to the Notes library, which executes the command
 Note.execute(obj);
 
-
-// Parses the command line input and returns the command and data
-// Passes the command to the Notes library, which executes the command
