@@ -9,5 +9,5 @@ const Note= require('./lib/notes.js')
 const obj= new Input();
 
 //Passes the command to the Notes library, which executes the command
-Note.execute(obj);
+const note1=new Note(obj)
 
